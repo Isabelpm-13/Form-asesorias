@@ -28,14 +28,14 @@ h5{
     font-family: 'Poppins', sans-serif;
 }
 
-    .button {
+ .button {
         background: #8dc7fd;
         border-radius: 5px;
         padding: 0.2rem 0.8rem;
         cursor: pointer;
-        position: absolute;
-        right: 15px;
-        bottom:   0;
+        
+        
+       
 }
 
 
