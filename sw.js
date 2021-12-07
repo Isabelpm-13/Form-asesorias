@@ -8,9 +8,9 @@ self.addEventListener('install', event => {
     const _files = [
       "/index.html",
       "/style.css",
-      "/js/app.js",
       "/js/indexedDB.js",
       "/assets/icons/noconnection.png",
+       "/app.js",
  
     ];
   
