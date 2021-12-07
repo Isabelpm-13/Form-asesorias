@@ -44,18 +44,7 @@ self.addEventListener('activate', (e) => {
     );
 });
 
-self.addEventListener('fetch', event => {
-    const _result = caches.match(event.request).then((cacheResponse) => {
-        return(cacheResponse || fetch(event.request).then(
-            networkResponse => {
-                caches.open(dynamicCache).then(cache => {
-                    cache.put(event.request, networkResponse.clone())
-                    return networkResponse
-                })
-            }
-        ));
-    });
-});
+
 
 self.addEventListener("message", (msgClient) => {
   if (msgClient.data.action == "skipWaiting") {
@@ -72,3 +61,5 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+
+
