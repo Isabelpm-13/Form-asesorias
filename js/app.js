@@ -1,3 +1,6 @@
+let newServiceWorker;
+              
+
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
       navigator.serviceWorker.register("sw.js").then((registerEvent) => {
@@ -7,8 +10,7 @@ if ("serviceWorker" in navigator) {
           newServiceWorker.addEventListener("statechange", () => {
             //if(newServiceWorker.state == 'installed' ){}
   
-               let newServiceWorker;
-              
+               
             switch (newServiceWorker.state) {
               case "installed":
                 showSnackbarUpdate();
