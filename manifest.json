@@ -1,7 +1,7 @@
 {
     "theme_color": "#ebaba5",
     "background_color": "#f2e1a6",
-    "display": "browser",
+    "display": "fullscreen",
     "scope": "/",
     "start_url": "/index.html",
     "name": "asesoriasA@2021",
