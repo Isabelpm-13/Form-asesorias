@@ -11,7 +11,7 @@ self.addEventListener('install', event => {
       "/js/app.js",
       "/js/indexedDB.js",
       "/assets/icons/noconnection.png",
-      "/app.js",
+ 
     ];
   
     const _IMMUTABLE_FILES = [
