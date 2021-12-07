@@ -7,6 +7,8 @@ if ("serviceWorker" in navigator) {
           newServiceWorker.addEventListener("statechange", () => {
             //if(newServiceWorker.state == 'installed' ){}
   
+               let newServiceWorker;
+              
             switch (newServiceWorker.state) {
               case "installed":
                 showSnackbarUpdate();
@@ -29,4 +31,19 @@ if ("serviceWorker" in navigator) {
     </div>
     `;
   }
+
+ //snackbar
+  function showSnackbarUpdate() {
+    let x = document.getElementById("snackbar");
+    x.className = "show";
+  }
+
+  let launchUpdate = document.getElementById('launchUpdate');
+launchUpdate.addEventListener('click', () => {
+    newServiceWorker.postMessage({
+        action: 'skipWaiting'
+    })
+
+    window.location.reload()
+})
 
