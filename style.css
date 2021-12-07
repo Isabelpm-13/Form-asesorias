@@ -12,10 +12,13 @@ body{
  width: 90%;
  max-width: 75em;
  margin: 1.25em auto;
+ 
 }
 
 h4{
     text-align: center;
+    font-size: small;
+    padding: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,10 +29,13 @@ h5{
 }
 
     .button {
-        background: rgb(236, 170, 149);
+        background: #8dc7fd;
         border-radius: 5px;
         padding: 0.2rem 0.8rem;
-        color: #141414;
         cursor: pointer;
+        position: absolute;
+        right: 15px;
+        bottom:   0;
 }
+
 
