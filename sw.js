@@ -10,7 +10,7 @@ self.addEventListener('install', event => {
       "/style.css",
       "/js/indexedDB.js",
       "/assets/icons/noconnection.png",
-       "/app.js",
+       "/js/app.js",
  
     ];
   
