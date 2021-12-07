@@ -21,10 +21,8 @@ if ("serviceWorker" in navigator) {
         });
       });
     });
-  }
   
- 
-  function alertConection(error){
+   function alertConection(error){
     noContent.innerHTML =  `
     <div class="col text-center">
     <h1 class="title">No hay conexion a internet </h1>
@@ -33,6 +31,8 @@ if ("serviceWorker" in navigator) {
     </div>
     `;
   }
+  }
+ 
 
  //snackbar
   function showSnackbarUpdate() {
